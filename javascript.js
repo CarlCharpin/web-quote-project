@@ -10,3 +10,8 @@ var quotes = [
 	'Love isn’t the most important thing. Physics is. – Krishan Kumar'
 	'To understand hydrogen is to understand all physics. – Victor Frederick Weisskopf'
 ]
+
+function newQuote() {
+	var randomNumber = Math.floor(Math.random() * (quotes.length));
+	document.getElementById('quoteDisplay').innerHTML = quotes[randomNumber];
+}
